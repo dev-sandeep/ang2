@@ -1,1 +1,18 @@
-<h3>Playlist Component</h3>
+<h4>Playlist</h4>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>title</td>
+            <td>description</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="#v of videos" (click)="onSelectVideo(v)">
+            <td>{{v.id}}</td>
+            <td>{{v.title}}</td>
+            <td>{{v.desc}}</td>
+        </tr>
+    </tbody>
+</table>
